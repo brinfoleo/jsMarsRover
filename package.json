@@ -1,0 +1,24 @@
+{
+  "name": "jsMarsRover",
+  "version": "1.0.0",
+  "description": "Tech Return's task to develop a car control software on mars!",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brinfoleo/jsMarsRover.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brinfoleo/jsMarsRover/issues"
+  },
+  "homepage": "https://github.com/brinfoleo/jsMarsRover#readme",
+  "dependencies": {
+    "jest": "^27.3.1",
+    "prompt": "^1.2.0"
+  }
+}
