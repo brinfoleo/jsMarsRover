@@ -1,7 +1,6 @@
 const scanMap = require('./scanMap');
 const move = require('./move');
 
-
 function getFinalPosition(area, landingSite, movement) {
 
     //start scan map

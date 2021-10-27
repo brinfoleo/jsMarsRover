@@ -5,7 +5,6 @@ const rover = ({
     direction: 'N'
 });
 
-
 function turnLeft(rover) {
     switch (rover.direction) {
         case "N":
