@@ -2,10 +2,10 @@ const scanMap = require('./scanMap');
 const move = require('./move');
 
 
-function getFinalPosition(scanArea, landingSite, movement) {
+function getFinalPosition(area, landingSite, movement) {
 
     //start scan map
-    mapSize = scanArea.split(' ');
+    mapSize = area.split(' ');
     let map = scanMap.scanMap(mapSize[0], mapSize[1]);
 
 

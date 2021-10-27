@@ -81,6 +81,9 @@ function commandListRun(commandList, map) {
     }
 }
 function checkPoint(x, y) {
+    /*
+    Function that tests the limits of the map and if there is no impediment for the vehicle to move!
+    */
     if (typeof (myMap[x]) == "undefined") return false;
     if (typeof (myMap[x][y]) == "undefined") return false;
     if (!myMap[x][y] === '0') return false;
