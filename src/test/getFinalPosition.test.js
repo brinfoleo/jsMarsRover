@@ -1,4 +1,5 @@
 const getFinalPosition = require("../getFinalPosition.js");
+const createMap=require("../scanMap.js").scanMap;
 
 test("Check if the rover received the coordinate", () => {
     //Arrange
@@ -10,6 +11,17 @@ test("Check if the rover received the coordinate", () => {
     //Act and Assert
     expect(getFinalPosition.rover = tstRover).toBe(tstRover)
 });
+
+//Creating a map
+test('Creating a 1 x 1 map', () => {
+    map=[['0','0'],['0','0']];
+    expect(createMap(1,1)).toEqual(map);
+});
+test('Creating a 1 x 1 map', () => {
+    map=[['0','0'],['0','0']];
+    expect(createMap(1,1)).toEqual(map);
+});
+
 // Move to RIGHT
 test('Moving the rover on a 5x5 plateau from north to east', () => {
     expect(getFinalPosition('5 5', '1 2 N', 'R')).toBe('1 2 E');
