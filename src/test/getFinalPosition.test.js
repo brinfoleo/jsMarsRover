@@ -1,5 +1,5 @@
 const getFinalPosition = require("../getFinalPosition.js");
-const createMap=require("../scanMap.js").scanMap;
+const createMap = require("../scanMap.js").scanMap;
 
 test("Check if the rover received the coordinate", () => {
     //Arrange
@@ -8,18 +8,20 @@ test("Check if the rover received the coordinate", () => {
         y: 10,
         direction: 'N'
     }
-    //Act and Assert
-    expect(getFinalPosition.rover = tstRover).toBe(tstRover)
+    //Act 
+    expect(getFinalPosition.rover = tstRover)
+        //Assert
+        .toBe(tstRover)
 });
 
 //Creating a map
 test('Creating a 1 x 1 map', () => {
-    map=[['0','0'],['0','0']];
-    expect(createMap(1,1)).toEqual(map);
+    map = [['0', '0'], ['0', '0']];
+    expect(createMap(1, 1)).toEqual(map);
 });
 test('Creating a 2 x 2 map', () => {
-    map=[['0','0','0'],['0','0','0'],['0','0','0']];
-    expect(createMap(2,2)).toEqual(map);
+    map = [['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']];
+    expect(createMap(2, 2)).toEqual(map);
 });
 
 // Move to RIGHT
@@ -67,5 +69,5 @@ test('Moving the rover on a 10 x 10 plateau from position 00 to position 1010', 
 //Trying to throw the rover off the plateau, it must remain in last position.
 test('Trying to throw the rover off the 4x3 plateau', () => {
     expect(getFinalPosition('4 3', '1 1 N', 'LMMMMM')).toBe('0 1 W');
-  
+
 });
