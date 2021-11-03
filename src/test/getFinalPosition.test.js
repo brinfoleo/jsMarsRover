@@ -10,7 +10,7 @@ test("Check if the rover received the coordinate", () => {
     //Act and Assert
     expect(getFinalPosition.rover = tstRover).toBe(tstRover)
 });
-
+// Move to RIGHT
 test('Moving the rover on a 5x5 plater from north to east', () => {
     expect(getFinalPosition('5 5', '1 2 N', 'R')).toBe('1 2 E');
 });
@@ -28,6 +28,27 @@ test('Moving the rover on a 5x5 plater from west to north', () => {
 test('Moving the rover on a 5x5 plator in 360 degrees', () => {
     expect(getFinalPosition('5 5', '1 2 N', 'RRRR')).toBe('1 2 N');
 });
+
+// Move to LEFT
+test('Moving the rover on a 5x5 plater from north to west', () => {
+    expect(getFinalPosition('5 5', '1 2 N', 'L')).toBe('1 2 W');
+});
+test('Moving the rover on a 5x5 plater from west to south', () => {
+    expect(getFinalPosition('5 5', '1 2 W', 'L')).toBe('1 2 S');
+});
+test('Moving the rover on a 5x5 plater from south to east', () => {
+    expect(getFinalPosition('5 5', '1 2 S', 'L')).toBe('1 2 E');
+
+});
+test('Moving the rover on a 5x5 plater from east to north', () => {
+    expect(getFinalPosition('5 5', '1 2 E', 'L')).toBe('1 2 N');
+});
+
+test('Moving the rover on a 5x5 plator in 360 degrees', () => {
+    expect(getFinalPosition('5 5', '1 2 N', 'LLLL')).toBe('1 2 N');
+});
+
+
 
 
 
