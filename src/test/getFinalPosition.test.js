@@ -17,9 +17,9 @@ test('Creating a 1 x 1 map', () => {
     map=[['0','0'],['0','0']];
     expect(createMap(1,1)).toEqual(map);
 });
-test('Creating a 1 x 1 map', () => {
-    map=[['0','0'],['0','0']];
-    expect(createMap(1,1)).toEqual(map);
+test('Creating a 2 x 2 map', () => {
+    map=[['0','0','0'],['0','0','0'],['0','0','0']];
+    expect(createMap(2,2)).toEqual(map);
 });
 
 // Move to RIGHT
