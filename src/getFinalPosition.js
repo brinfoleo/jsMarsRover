@@ -14,7 +14,7 @@ function getFinalPosition(area, landingSite, movement) {
     move.rover.y = roverPosition[1];
     move.rover.direction = roverPosition[2];
 
-    //Move car
+    //Move the rover
     move.commandListRun(movement, map);
     scanMap.view(map);
 

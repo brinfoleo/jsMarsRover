@@ -20,6 +20,7 @@ function view(viewMap){
     /*
     *  function to implement a better way to view the map
     */
+  
     console.log(viewMap);
     /*
     for (let i=viewMap.length;i>0;i--){

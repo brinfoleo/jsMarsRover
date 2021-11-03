@@ -52,7 +52,7 @@ test('Moving the rover on a 5x5 plateau in 360 degrees', () => {
 test('Moving the rover on a 10 x 10 plateau from position 00 to position 1010', () => {
     expect(getFinalPosition('10 10', '0 0 N', 'MRMLMRMLMRMLMRMLMRMLMRMLMRMLMRMLMRMLMRML')).toBe('10 10 N');
 });
-
+//Trying to throw the rover off the plateau, it must remain in last position.
 test('Trying to throw the rover off the 4x3 plateau', () => {
     expect(getFinalPosition('4 3', '1 1 N', 'LMMMMM')).toBe('0 1 W');
   
