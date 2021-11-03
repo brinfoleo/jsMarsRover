@@ -1,5 +1,14 @@
 const getFinalPosition = require("../getFinalPosition.js");
 
+test ("Check if the rover received the coordinate",()=>{
+    const tstRover={
+        x: 10,
+        y: 10,
+        direction: 'N'
+    }
+    expect(getFinalPosition.rover=tstRover).toBe(tstRover)
+});
+
 test('Moving the rover simply: Test 1', () => {
     expect(getFinalPosition('5 5', '1 2 N', 'LMLMLMLMM')).toBe('1 3 N');
 });
