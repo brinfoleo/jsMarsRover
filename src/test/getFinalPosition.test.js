@@ -1,4 +1,4 @@
-const getFinalPosition = require("../start.js");
+const getFinalPosition = require("../getFinalPosition.js");
 
 test('Moving the rover simply: Test 1', () => {
     expect(getFinalPosition('5 5', '1 2 N', 'LMLMLMLMM')).toBe('1 3 N');
